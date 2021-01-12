@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css"
+			href="{{ url_for('static', filename='style.css')}}">
+	</head>
+	<body>
+		<h1>べき乗の計算</h1>
+		<div class="wrap">
+		<p>pythonでべき乗の計算をします。整数を２つ入力してください。</p>
+		<form action="/calc" method="post">
+			<dl>
+				<!-- もとの数 -->
+				<input type="text" name="num1" size="20" maxlength="200">の
+				<!-- もとの数 -->
+				<input type="text" name="num2" size="20" maxlength="200">べき乗
+			</dl>
+			<div>
+				<!-- submit -->
+				<input type="submit" value="計算">
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

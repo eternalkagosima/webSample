@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css"
+			href="{{ url_for('static', filename='style.css')}}">
+	</head>
+	<body>
+	
+		<h1>べき乗の計算</h1>
+		<div class="wrap">
+		<p>結果</p>
+		<dl>
+			<!-- 結果 -->
+			{{a}}**{{b}}={{c}}
+		</dl>
+		</div>
+	</body>
+</html>
